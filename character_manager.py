@@ -34,7 +34,7 @@ def create_character(name, character_class):
     
     Raises: InvalidCharacterClassError if class is not valid
     """
-     valid_classes = {
+    valid_classes = {
         "Warrior": {"health": 120, "strength": 15, "magic": 5},
         "Mage": {"health": 80, "strength": 8, "magic": 20},
         "Rogue": {"health": 90, "strength": 12, "magic": 10},
