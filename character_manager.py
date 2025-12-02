@@ -2,7 +2,7 @@
 COMP 163 - Project 3: Quest Chronicles
 Character Manager Module - Starter Code
 
-Name: [Your Name Here]
+Name: Kimora James 
 
 AI Usage: [Document any AI assistance used]
 
@@ -34,21 +34,32 @@ def create_character(name, character_class):
     
     Raises: InvalidCharacterClassError if class is not valid
     """
-    # TODO: Implement character creation
-    # Validate character_class first
-    # Example base stats:
-    # Warrior: health=120, strength=15, magic=5
-    # Mage: health=80, strength=8, magic=20
-    # Rogue: health=90, strength=12, magic=10
-    # Cleric: health=100, strength=10, magic=15
-    
-    # All characters start with:
-    # - level=1, experience=0, gold=100
-    # - inventory=[], active_quests=[], completed_quests=[]
-    
-    # Raise InvalidCharacterClassError if class not in valid list
-    pass
+     valid_classes = {
+        "Warrior": {"health": 120, "strength": 15, "magic": 5},
+        "Mage": {"health": 80, "strength": 8, "magic": 20},
+        "Rogue": {"health": 90, "strength": 12, "magic": 10},
+        "Cleric": {"health": 100, "strength": 10, "magic": 15},
+    }
 
+    if character_class not in valid_classes:
+        raise InvalidCharacterClassError(f"Invalid character class: {character_class}")
+
+    base = valid_classes[character_class]
+
+    return {
+        "name": name,
+        "class": character_class,
+        "level": 1,
+        "health": base["health"],
+        "max_health": base["health"],
+        "strength": base["strength"],
+        "magic": base["magic"],
+        "experience": 0,
+        "gold": 100,
+        "inventory": [],
+        "active_quests": [],
+        "completed_quests": [],
+    }
 def save_character(character, save_directory="data/save_games"):
     """
     Save character to file
