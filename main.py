@@ -4,7 +4,7 @@ Main Game Module - Starter Code
 
 Name: [Kimora James]
 
-AI Usage: [Document any AI assistance used]
+AI Usage: chatgpt was used to help structure my functions and clear up soem errors 
 
 This is the main game file that ties all modules together.
 Demonstrates module integration and complete game flow.
