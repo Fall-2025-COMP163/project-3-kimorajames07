@@ -2,10 +2,9 @@
 COMP 163 - Project 3: Quest Chronicles
 Quest Handler Module - Starter Code
 
-Name: [Your Name Here]
+Name: Kimora James 
 
-AI Usage: [Document any AI assistance used]
-
+AI Usage: AI was used vchatgpt specifically to structure my functions and corrects some errors 
 This module handles quest management, dependencies, and completion.
 """
 
