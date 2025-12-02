@@ -104,7 +104,7 @@ def load_game():
     
     from character_manager import list_saved_characters, load_character # The imports at the top are apparently not working
 
- # 1. Get list of saved characters
+    #1. Get list of saved characters
     saved_characters = list_saved_characters()  # from character_manager
     
     if not saved_characters:
